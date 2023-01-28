@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CSS Specificity Cheat Sheet
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+    </head>
+
+    <body>
+        <h1>CSS Specificity</h1>
+        <h3>Colour coded by Priority</h3>
+        <br>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Selector</th>
+                <th>Description</th>
+                <th>Example</th>
+            </thead>
+            <tbody>
+                <!-- First priority -->
+                <tr class="first">
+                    <td class="first">Important</td>
+                    <td>!important</td>
+                    <td>!Important is a rule which overrides ALL previous styling rules for that specific property on that element</td>
+                    <td class="code">p {<br>
+                        background-color: red !important;<br>
+                      }</td>
+                </tr>
+                <!-- Second priority -->
+                <tr class="second">
+                    <td>Inline Styles</td>
+                    <td>&lt;tag style=""&gt;</td>
+                    <td>Inline Styles have second priority</td>
+                    <td class="code">&lt;h1 style="color: blue"&gt;</td>
+                </tr>
+                <!-- Third priority -->
+                <tr class="third">
+                    <td>ID</td>
+                    <td>#id</td> 
+                    <td>ID has third priority, and selects the element with id="firstname"</td>
+                    <td class="code">#firstname {}</td>
+                </tr>
+                <!-- Fourth Priority -->
+                <tr class="fourth">
+                    <td>Class</td>
+                    <td>.class</td>
+                    <td>Class has joint fourth priority, and selects all elements with class="intro"</td>
+                    <td class="code">.intro {}</td>
+                </tr>
+                <tr class="fourth">
+                    <td>Pseudo-Class</td>
+                    <td>selector:pseudo-class</td>
+                    <td>Pseudo-Class has joint fourth priority, and selects paragraph elements when hovered over</td>
+                    <td class="code">p:hover {}</td>
+                </tr>
+                <tr class="fourth">
+                    <td>Attribute</td>
+                    <td>[attribute]</td>
+                    <td>Attibute has joint fourth priority, and selects all elements with a href attribute</td>
+                    <td class="code">[href] {}</td>
+                </tr>
+                <!-- Fifth Priority -->
+                <tr class="fifth">
+                    <td>Element</td>
+                    <td>element</td>
+                    <td>Element has joint fifth priority, and selects all instances of h1</td>
+                    <td class="code">h1 {}</td>
+                </tr>
+                <tr class="fifth">
+                    <td>Pseudo-Element</td>
+                    <td>selector::pseudo-element</td>                    
+                    <td>Pseudo-Element has joint fifth priority, and selects all first lines in all paragraph elements</td>
+                    <td class="code">p::first-line {}</td>
+                </tr>
+                <!-- Last priority -->
+                <tr class="sixth">
+                    <td>Universal Selector</td>
+                    <td>*</td>                    
+                    <td>The Universal Selector has last priority, and selects all elements</td>
+                    <td class="code">* {}</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

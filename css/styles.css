@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    font-size: 12px;
+    /* font-weight: bold; */
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+
+th {
+    background-color: #96D4D4;
+    font-size: 12px;
+}
+
+th, td {
+    padding: 15px;
+  }
+
+  td {
+    font-size: 12px;
+  }
+
+  .code {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 10px;
+  }
+
+  .first {
+    background-color: #a476ff;
+  }
+
+  .second {
+    background-color: #b892ff;
+  }
+
+  .third {
+    background-color: #cdabff;
+  }
+
+  .fourth {
+    background-color: #dec8ff;
+  }
+
+  .fifth {
+    background-color: #eee1ff;
+  }
+
+  .sixth {
+    background-color: #f4f1ff;
+  }
